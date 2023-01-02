@@ -42,7 +42,7 @@ class Bass:
 
     def click(self,xpath):
         self.xpath = xpath
-        bass = self.driver.find_element(By.XPATH, '//*[@id="cd-primary-nav"]/li[10]/a') 
+        bass = self.driver.find_element(By.XPATH, xpath) 
         bass.click() #select button
         time.sleep(1)
 
